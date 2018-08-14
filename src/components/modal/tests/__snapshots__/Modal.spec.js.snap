@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> matches the latest snapshot 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <button
+      className="centered"
+      onClick={[Function]}
+    >
+      Open Modal
+    </button>
+  </div>
+</Fragment>
+`;

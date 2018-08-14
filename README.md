@@ -14,7 +14,7 @@
 
 ### Configure the development environment
 
-The `dev.config.js` file can also be used to override default configuration, for example to speed up development build and rebuild:
+The `dev.config.js` file can be used to override default configuration, for example to speed up development build and rebuild:
 
 ```javascript
 module.exports = {
