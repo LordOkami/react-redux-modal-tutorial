@@ -1,5 +1,19 @@
 # REACT REDUX MODAL TUTORIAL
 
+- React 16
+- Redux
+- Sagas
+- Webpack 4
+- Babel
+- React Router
+- Redux DevTools
+- Eslint
+- Jest & Enzyme
+- lint-staged
+- Husky
+- redux-saga-routines
+- reselect
+
 ### Install depencencies
 
 `yarn`

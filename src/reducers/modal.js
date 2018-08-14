@@ -10,6 +10,8 @@ const initialState = {
     "Channels"
   ],
   geometrics: ["circle", "triangle", "square", "pentagon", "hexagon"],
+  colors: ["red", "blue", "orange", "yellow", "purple"],
+  step: 0,
   selectedOption: 0
 };
 

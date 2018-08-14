@@ -16,9 +16,7 @@ const OverlayModal = ({ closeModal }) => (
         <div className="menu">
           <Options />
         </div>
-        <div className="showcase">
-          <ShowCase />
-        </div>
+        <ShowCase />
       </div>
       <button onClick={closeModal}>Skip tutorial</button>
     </div>

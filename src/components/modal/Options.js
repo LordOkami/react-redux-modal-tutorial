@@ -5,7 +5,10 @@ import { connect } from "react-redux";
 
 import { selectOption } from "../../routines";
 
-const Options = ({ modal: { options, selectedOption }, selectOption }) => (
+export const Options = ({
+  modal: { options, selectedOption },
+  selectOption
+}) => (
   <React.Fragment>
     {options &&
       options.map((option, index) => (
@@ -14,7 +17,7 @@ const Options = ({ modal: { options, selectedOption }, selectOption }) => (
           className={`option ${selectedOption == index && "selected"}`}
           onClick={() => selectOption(index)}
         >
-          {option}
+          {index} - {option}
         </div>
       ))}
   </React.Fragment>

@@ -126,10 +126,18 @@ video {
 
 .title {
   width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
 }
 
 .menu {
   width: 50%;
+}
+
+.option {
+  height: 3em;
+  line-height: 3em;
 }
 
 .showcase {
@@ -140,31 +148,47 @@ video {
   padding-top: 175px;
 }
 
+.steps {
+  position: absolute;
+  right: 38vw;
+  top: 95vh;
+  width: 190px;
+  display: inherit;
+}
+
+.step {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: blue;
+  margin-right: 5px;
+}
+
 .selected {
   background-color: gray;
 }
 
 .square {
-	width: 100px;
-	height: 100px;
-	background: red;
+  width: 100px;
+  height: 100px;
+  background: red;
 }
 
 .circle {
-	width: 100px;
-	height: 100px;
-	background: red;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
 }
 
 .triangle {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid red;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
 }
 
 .pentagon {
@@ -174,6 +198,7 @@ video {
   border-style: solid;
   border-color: red transparent;
 }
+
 .pentagon:before {
   content: "";
   position: absolute;
@@ -187,30 +212,32 @@ video {
 }
 
 .hexagon {
-	width: 100px;
-	height: 55px;
-	background: red;
-	position: relative;
+  width: 100px;
+  height: 55px;
+  background: red;
+  position: relative;
 }
+
 .hexagon:before {
-	content: "";
-	position: absolute;
-	top: -25px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 25px solid red;
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid red;
 }
+
 .hexagon:after {
-	content: "";
-	position: absolute;
-	bottom: -25px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 25px solid red;
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid red;
 }

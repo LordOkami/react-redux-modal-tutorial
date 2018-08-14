@@ -10,7 +10,6 @@ import OverlayModal from "./OverlayModal";
 export const Modal = ({ openModal, modal }) => (
   <React.Fragment>
     <div className="container">
-      {console.log(modal)}
       <button className="centered" onClick={openModal}>
         Open Modal
       </button>

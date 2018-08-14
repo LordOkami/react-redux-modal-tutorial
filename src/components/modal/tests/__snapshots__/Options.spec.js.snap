@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Options /> matches the latest snapshot 1`] = `
+<Fragment>
+  <div
+    className="option selected"
+    key="0"
+    onClick={[Function]}
+  >
+    0
+     - 
+    uno
+  </div>
+  <div
+    className="option false"
+    key="1"
+    onClick={[Function]}
+  >
+    1
+     - 
+    dos
+  </div>
+</Fragment>
+`;
