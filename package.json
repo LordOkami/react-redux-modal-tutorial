@@ -1,0 +1,118 @@
+{
+  "name": "react-redux-modal-tutorial",
+  "version": "1.0.0",
+  "description": "React redux modal tutorial",
+  "main": "index.js",
+  "author": "Luis Sebastián Huerta",
+  "license": "GPL-3.0",
+  "scripts": {
+    "analyze": "webpack --profile --json --mode production -p > stats.json",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production -p --optimize-minimize",
+    "start": "webpack-dev-server -d --mode development",
+    "precommit": "lint-staged",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.51",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-es2015": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.4.0",
+    "babel-loader": "^8.0.0-beta.4",
+    "babel-plugin-dynamic-import-node": "^2.0.0",
+    "babel-plugin-lodash": "^3.3.3",
+    "babel-plugin-react-intl": "^2.4.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "babel-plugin-transform-semantic-ui-react-imports": "https://github.com/Bluetab/babel-plugin-transform-semantic-ui-react-imports.git",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-prettier": "^2.6.1",
+    "eslint-plugin-react": "^7.10.0",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^0.14.3",
+    "identity-obj-proxy": "^3.0.0",
+    "image-webpack-loader": "^4.3.0",
+    "jest": "^23.4.0",
+    "less": "2.7.3",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^7.1.3",
+    "mini-css-extract-plugin": "^0.4.1",
+    "prettier": "^1.13.7",
+    "redux-saga-test-plan": "^3.7.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,css,md,babelrc}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "verbose": false,
+    "globals": {
+      "__DEV__": true
+    },
+    "testURL": "http://localhost",
+    "rootDir": ".",
+    "moduleDirectories": [
+      "node_modules",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-color": "^2.14.1",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "lodash",
+    "@babel/syntax-dynamic-import",
+    "@babel/proposal-class-properties",
+    "transform-semantic-ui-react-imports",
+    ["react-intl", { "messagesDir": "./dist/messages/" }]
+  ],
+  "presets": ["@babel/env", "@babel/react"],
+  "env": {
+    "test": {
+      "presets": ["@babel/es2015", "@babel/react"],
+      "plugins": [
+        ["transform-semantic-ui-react-imports", { "importType": "commonjs" }],
+        "@babel/transform-modules-commonjs",
+        "dynamic-import-node"
+      ]
+    },
+    "production": {
+      "plugins": ["transform-react-remove-prop-types"]
+    }
+  }
+}
